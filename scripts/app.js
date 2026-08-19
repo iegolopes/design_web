@@ -1,1 +1,1 @@
-alert("olá Eduardo, seu gordo imenso");
+alert("olá mundo");
