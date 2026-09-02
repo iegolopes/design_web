@@ -1,5 +1,14 @@
 let dia = prompt("Escolha um dia da semana \n Sendo 1:Domingo - 7:Sábado")
 dia = Number(dia);
+switch(dia){
+    case 1: alert("Você escolheu domingo")
+    case 1: alert("Você escolheu domingo")
+    case 1: alert("Você escolheu domingo")
+    case 1: alert("Você escolheu domingo")
+    case 1: alert("Você escolheu domingo")
+    case 1: alert("Você escolheu domingo")
+    case 1: alert("Você escolheu domingo")
+}
 
 if (dia <= 0|| dia >=8){
     alert("Dia invalido");
