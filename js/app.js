@@ -9,5 +9,15 @@ function proximo(e){
     imagem.setAttribute("src",`./img/foto${i}.jpg`);
 }
 
-const prox=document.getElementById("prox")
-prox.addEventListener("click", proximo)
+const prox=document.getElementById("prox");
+prox.addEventListener("click", proximo);
+
+function anterior(e){
+    if(i > 1){
+        i=i-1;
+    }
+    imagem.setAttribute("src",`./img/foto${i}.jpg`);
+}
+
+const ant = document.getElementById("ant");
+ant.addEventListener("click", anterior);
