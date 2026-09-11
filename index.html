@@ -10,13 +10,44 @@
       <h3>Data:11/09/2026</h3>
       <table border="1">
            <tr>
-              <td></td>
               <td>
+                <button id="ant">Anterior</button>
+                <button id="prox">Próximo</button>
+              </td>
+              <td rowspan="4">
                 <img id="foto" src="./pets/img/foto1.jpg" width="350px">
               </td>
            </tr>
+           <tr>
+              <td>
+                 <select id="combobox">
+                     <option value="1">Mel</option>
+                     <option value="2">Balu</option>
+                     <option value="3">Zoey</option>
+                     <option value="4">Aia</option>
+                     <option value="5">Pitomba</option>
+                     <option value="6">Bombom</option>
+                 </select>
+              </td>
+           </tr>
+           <tr>
+              <td>
+                 <select id="combobox">
+                    <li id="li1">Mel</li>
+                    <li id="li2">Balu</li>
+                    <li id="li3">Zoey</li>
+                    <li id="li4">Aia</li>
+                    <li id="li5">Pitomba</li>
+                    <li id="li6">Bombom</li>
+                 </select>
+              </td>
+           </tr>
+           <tr>
+             <td>
+                <input type="range" id="opacidade" min="0" max="1">
+             </td>
+           </tr>
       </table>
       <script src="./js/app.js" defer></script>
-
 </body>
 </html>
