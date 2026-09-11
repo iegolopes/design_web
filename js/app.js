@@ -13,6 +13,7 @@ const prox=document.getElementById("prox");
 prox.addEventListener("click", proximo);
 
 function anterior(e){
+    e.preventDefault();
     if(i > 1){
         i=i-1;
     }
