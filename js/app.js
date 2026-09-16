@@ -52,3 +52,31 @@ li2.addEventListener("mouseover", function(e){
     i=2;
     foto.setAttribute("src", `./img/foto${i}.jpg`);
 })
+
+const li3 =document.getElementById("li3");
+li3.addEventListener("mouseouver", function(e){
+    e.preventDefault();
+    i=3;
+    foto.setAttribute("src", `./img/foto${i}.jpg`);
+})
+
+const li4 =document.getElementById("li4");
+li4.addEventListener("mouseover", function(e){
+    e.preventDefault();
+    i=4;
+    foto.setAttribute("src", `./img/foto${i}.jpg`);
+})
+
+const li5 =document.getElementById("li5");
+li5.addEventListener("mouseover", function(e){
+    e.preventDefault();
+    i=5;
+    foto.setAttribute("src", `./img/foto${i}.jpg`);
+})
+
+const li6 =document.getElementById("li6");
+li6.addEventListener("mouseover", function(e){
+    e.preventDefault();
+    i=6;
+    foto.setAttribute("src", `./img/foto${i}.jpg`);
+})
