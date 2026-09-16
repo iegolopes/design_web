@@ -54,7 +54,7 @@ li2.addEventListener("mouseover", function(e){
 })
 
 const li3 =document.getElementById("li3");
-li3.addEventListener("mouseouver", function(e){
+li3.addEventListener("mouseover", function(e){
     e.preventDefault();
     i=3;
     foto.setAttribute("src", `./img/foto${i}.jpg`);
