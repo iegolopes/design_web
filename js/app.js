@@ -43,12 +43,12 @@ const li1 =document.getElementById("li1");
 li1.addEventListener("mouseover", function(e){
     e.preventDefault();
     i=1;
-    foto.setAttribute("src", `./img/foto${i}`);
+    foto.setAttribute("src", `./img/foto${i}.jpg`);
 })
 
 const li2 =document.getElementById("li2");
 li2.addEventListener("mouseover", function(e){
     e.preventDefault();
     i=2;
-    foto.setAttribute("src", `./img/foto${i}`);
+    foto.setAttribute("src", `./img/foto${i}.jpg`);
 })
