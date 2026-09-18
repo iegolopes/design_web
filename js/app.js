@@ -1,1 +1,1 @@
-const 
+const amigos = ["Pedro", "Ana", "Clara"];
