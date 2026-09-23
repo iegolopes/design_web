@@ -6,18 +6,18 @@ const whatsapp=cadastro.whatsapp;
 const lista = document.getElementById("lista")
 
 cadastro.addEventListener("submit", function(e){
-    e.preventDefault;
+    e.preventDefault();
     let item = [nome.value, nasc.value, whatsapp.value];
     amigos.unshift(item);
     //Limpa p formulario
-    cadastro.request()
+    cadastro.reset()
     //Atulaiza lista
     exibirLista();
 });
 
 function exibirLista(){
     let itens="";
-    for(let i = 0; i<amigos,amigos.length; i++){
+    for(let i = 0; i<amigos.length; i++){
         let item = amigos[i]; //[Nome, Nasc, Whatsapp]
         //Cria uma tag li
         let li = `<li>${item[0]} | ${item[1]} | ${item[2]}`;
