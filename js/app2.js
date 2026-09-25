@@ -36,8 +36,9 @@ function exibirLista(){
         let item = amigos[i]; //[Nome, Nasc, Whatsapp]
         //Cria botao para remover
         let remover = `<button onclick="remover(${i})">Remover</button>`
+        let atualizar = `<button onclick="atualizar(${i})">Atualizar</button>`
         //Cria uma tag li
-        let li = `<li>${item[0]} | ${item[1]} | ${item[2]} | ${remover} </li>`;
+        let li = `<li>${item[0]} | ${item[1]} | ${item[2]} | ${remover} | ${atualizar}</li>`;
         itens = itens + li;
     }
     //Alterar o HTML da lista para ser igual aos itens
@@ -51,4 +52,12 @@ function remover(i){
         amigos.splice(i,1);//splice(posição inicial, qtd itens a remover)
     }
     exibirLista();
+}
+
+function atualizar(i){
+    editando=i;
+    let item=amigos[editando]
+    nome.value=item[0]
+    nasc.value=item[1]
+    whatsapp.value=item[2]
 }
