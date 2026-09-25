@@ -4,14 +4,29 @@ const nome=cadastro.nome;
 const nasc=cadastro.nasc;
 const whatsapp=cadastro.whatsapp;
 const lista = document.getElementById("lista")
+let editando=null;
 
 cadastro.addEventListener("submit", function(e){
     e.preventDefault();
     let item = [nome.value, nasc.value, whatsapp.value];
-    amigos.unshift(item);
-    //Limpa p formulario
-    cadastro.reset()
-    //Atulaiza lista
+    if (editando == null){
+        let check = amigos.find(item => item[0] == nome.value)
+        if (check == undefined){
+            //Adiciona se não existir
+            amigos.unshift(item);
+             //Limpa o formulario
+            cadastro.reset();
+        }else{
+            alert(`${nome.value} já cadastrado`)
+        }
+    }else{
+        //Se editando diferente de nulo, atualizar
+        let amigo = amigos[editando] //[Nome, nasc, whatsapp]
+        amigo[0]=nome.value;
+        amigo[1]=nasc.value;
+        amigo[2]=whatsapp.value;
+    }
+    //Atualiza lista
     exibirLista();
 });
 
