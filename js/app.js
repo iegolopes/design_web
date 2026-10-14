@@ -34,7 +34,22 @@ class Doguinho extends Animal{
     falar(){
         alert("au!au!");
     }
+    saudar(){
+        let msg = super().saudar();
+        msg = msg +"Sou um cachorro!"
+        alert(msg)
+    }
+}
+
+class Passarim extends Animal{
+    constructor(n, c="Desconhecido", a=0.0, p=0, r="vira-lata"){
+        super(n,c,a,p,r)
+    }
+    falar(){
+        alert("piu!piu!")
+    }
 }
 
 const balu = new Doguinho("Balu Brasil")
 const mel = new Doguinho("Mel", "Amarelo", 1.10, 45, "Labrador")
+const leleco = new Passarim("Leleco Brasil", r="Papagaio")
