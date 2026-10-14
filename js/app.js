@@ -57,4 +57,4 @@ class Passarim extends Animal{
 
 const balu = new Doguinho("Balu Brasil")
 const mel = new Doguinho("Mel", "Amarelo", 1.10, 45, "Labrador")
-const leleco = new Passarim("Leleco Brasil", r="Papagaio")
+const leleco = new Passarim("Leleco Brasil", undefined, undefined, undefined, r="Papagaio")
