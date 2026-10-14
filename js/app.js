@@ -22,7 +22,7 @@ class Animal{
         msg = msg + `Cor: ${this.cor} Raça: ${this.raca}\n` 
         msg = msg + `Peso: ${this.peso}\n`
         msg = msg + `Altura: ${this.peso}\n`
-        alert(msg)
+        return msg
     }
 }
 
