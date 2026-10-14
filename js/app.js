@@ -48,6 +48,11 @@ class Passarim extends Animal{
     falar(){
         alert("piu!piu!")
     }
+    saudar(){
+        let msg = super().saudar();
+        msg = msg +"Sou um passaro!"
+        alert(msg)
+    }
 }
 
 const balu = new Doguinho("Balu Brasil")
