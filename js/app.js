@@ -25,5 +25,16 @@ class Animal{
         alert(msg)
     }
 }
-const balu = new Animal("Balu Brasil")
-const mel = new Animal("Mel", "Amarelo", 1.10, 45, "Labrador")
+
+class Doguinho extends Animal{
+    constructor(n, c="Desconhecido", a=0.0, p=0, r="vira-lata"){
+        super(n,c,a,p,r);
+        this.patas = 4;
+    }
+    falar(){
+        alert("au!au!");
+    }
+}
+
+const balu = new Doguinho("Balu Brasil")
+const mel = new Doguinho("Mel", "Amarelo", 1.10, 45, "Labrador")
