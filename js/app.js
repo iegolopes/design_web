@@ -16,6 +16,8 @@ cadastro.addEventListener("submit", function(e){
     let data_formada = `${hoje.getDay()}/${hoje.getMonth() + 1}/${hoje.getFullYear()}`;
     saudacao.innerHTML = `Olá, ${nome.value}! Hoje  é ${data_formada}`;
     if (data_aniv > hoje){
+        let dif = data_aniv.getMonth() - hoje.getMonth();
+
        aniversario.innerHTML = `Diferença de hoje para niver ${data_aniv - hoje}`;
     }else{
        aniversario.innerHTML = `Diferença de hoje para niver ${hoje - data_aniv}`;
