@@ -10,3 +10,7 @@ window.addEventListener("scroll", function(e){
         topo.classList.remove("solido")
     }
 })
+
+function destacar(){
+    enfase.classlist.add("destaque");
+}
