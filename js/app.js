@@ -12,5 +12,9 @@ window.addEventListener("scroll", function(e){
 })
 
 function destacar(){
-    enfase.classlist.add("destaque");
+    enfase.classList.add("destaque");
+}
+
+function cancelar(){
+    enfase.classList.remove("destaque");
 }
