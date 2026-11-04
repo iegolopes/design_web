@@ -9,6 +9,16 @@ input, button{
     border: 1px solid lightgray;
     padding: 5px;
 }
+
+li{
+    list-style: none;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: lightblue;
+    text-decoration: lightslategray;
+    justify-content: space-between;
+}
+
  button{
     background: blue;
     color: white;
