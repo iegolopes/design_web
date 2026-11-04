@@ -1,0 +1,19 @@
+.container{
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+input, button{
+    display: inline-block;
+    border-radius: 5px;
+    border: 1px solid lightgray;
+    padding: 5px;
+}
+ button{
+    background: blue;
+    color: white;
+ }
+
+ #lista button{
+    background-color: red;
+ }
